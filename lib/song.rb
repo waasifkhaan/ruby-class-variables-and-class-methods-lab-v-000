@@ -21,7 +21,11 @@ class Song
     @@count
   end 
   def self.genres
-     @@genres
+     arry= []
+    @@genres.each do |genre|
+       arry << genre unless arry.include?(genre)
+    end
+    arry
   end
   def self.artists
     arry= []
