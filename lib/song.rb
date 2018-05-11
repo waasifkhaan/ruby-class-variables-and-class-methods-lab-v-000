@@ -38,8 +38,8 @@ class Song
     arry
   end
   def self.artist_count 
-  arry= []
-    @@artists.each do |artist|
+  hash= {}
+    @@artists.each_with_index do |artist, index|
        arry << artist unless arry.include?(artist) 
     end 
     arry
