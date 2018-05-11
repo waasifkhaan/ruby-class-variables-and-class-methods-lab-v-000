@@ -39,8 +39,9 @@ class Song
   end
   def self.artist_count 
   hash= {}
+  hash[new_key] = []
     @@artists.each_with_index do |artist, index|
-       arry << artist unless arry.include?(artist) 
+    hash[artist] << index    unless arry.include?(artist) 
     end 
     hash
   end 
