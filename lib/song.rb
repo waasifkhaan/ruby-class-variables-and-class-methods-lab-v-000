@@ -42,7 +42,7 @@ class Song
     @@artists.each_with_index do |artist, index|
        arry << artist unless arry.include?(artist) 
     end 
-    arry
+    hash
   end 
 end
     
