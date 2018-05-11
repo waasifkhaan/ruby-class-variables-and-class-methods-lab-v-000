@@ -38,7 +38,11 @@ class Song
     arry
   end
   def self.artist_count 
-  #enter code here 
+  arry= []
+    @@artists.each do |artist|
+       arry << artist unless arry.include?(artist) 
+    end 
+    arry
   end 
 end
     
